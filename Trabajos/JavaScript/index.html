@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h2>Bienvenida a la Doxiada de tu vida</h2>
+                <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">¿Cuál es la hora de tu corazón?</button>
+
+                <p id="demo"></p>
+
+                <h2>Vamo a prender la luz</h2>
+
+                <button type="button" onclick="document.getElementById('image').src='encendido.jpg'">Prende la luz para la inteligencia</button>
+                <img id=image src="off.jpg" style="width: 100px;">
+
+                <button type="button" onclick="document.getElementById('image').src='off.jpg'">Apagala que la luz esta muy cara</button>
+            </td>
+            <td>
+                <h2>Vamos a cambiar el texto de aqui abajo con un botón</h2>
+                <p id="sentir">¿Qué tal te sientes?</p>
+                <button type="button" onclick="document.getElementById('sentir').innerHTML='Muy bien gracias por preguntar'">Para responder</button>
+                
+                <h2>Ahora cambiemos el color</h2>
+                <p id="color">Quiere ser morada</p>
+                <button type="button" onclick="document.getElementById('color').style.color='purple'">Morado</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Quiero ver si funciona con una imagen</h2>
+                <img id="hide" src="yoongi.jpg" width="100px" style="display: none">
+
+                <button type="button" onclick="document.getElementById('hide').style.display='block'">Presioname y veras la magia</button>
+            </td>
+            <td>
+                <h2>Seamos Profesionales con script</h2>
+                <p>Da click y veras a un Eren</p>
+                <img id="eren" src="eren.jpg" alt="eren" width="200px" style="display: none">
+
+                <button type="button" onclick="imagen()">click</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="grid">
+                <div>
+                    <h2>Sumemos 1+2</h2>
+                    <p id="suma"></p>
+                    <h3>Alertemos a la gente</h3>
+                    <button type="button" onclick="aviso()">click</button>
+                </div>
+                <div>
+                    <h2>Presiona la imagen y abre la consola para ver un secreto</h2>
+                    <img src="pll.jpg" width="200px" onclick="consola()">
+                </div>   
+            </td>
+            <td>
+                <h2>Imprimamos la página</h2>
+                <button type="button" onclick="imprimir()">Presioname</button>
+                <h2>Trabajemos con arrays</h2>
+                <p id="array"></p>
+                <button type="button" onclick="prueba()">boton</button>
+                
+            </td>
+        </tr>
+    </table>
+    
+
+    <script>
+        function imagen(){
+            document.getElementById("eren").style.display='block';
+        }
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

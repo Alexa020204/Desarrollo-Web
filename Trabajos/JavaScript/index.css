@@ -1,0 +1,11 @@
+
+td{
+    border: 1px palevioletred solid;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
