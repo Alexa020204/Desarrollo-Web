@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="calculadora" action="localhost" method="get">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input maxlength="9" type="text" id="number" name="text"  value="0">
+                </td>
+
+            </tr>
+           
+
+            <tr >
+                <td class="black"><a ref="#"    id="porcentaje" name="porcentaje">%</a></td>
+                <td class="black" ><a ref="#" id="ce" name="ce" >CE</a></td>
+                <td class="black" ><a ref=#   id="c" name="c">C</a></td>
+                <td class="black"><a ref="#"  id="back" name="back" >back </a></td>
+            </tr>
+            <tr >
+                <td  class="black"><a ref="#"   id="unodiv" name="unodiv">1/x</a></td>
+                <td  class="black"><a ref="#"  id="cuadrado" name="cuadrado">x^2</a></td>
+                <td  class="black"><a ref="#"   id="sqrt" name="sqrt" >sqrt</a></td>
+                <td  class="black"><a ref="#"  id="div" name="div">/</a></td>
+            </tr>
+            <tr>
+                <td onclick="addkeyDisplay('7')" class="grey"><a ref="#"  id="siete" >7</a></td>
+                <td onclick="addkeyDisplay('8')"class="grey"><a ref="#"  id="ocho"  >8</a></td>
+                <td onclick="addkeyDisplay('9')"class="grey"><a ref="#"  id="nueve" >9</a></td>
+                <td class="black"><a ref="#" id="equis" name="equis" >x</a></td>
+            </tr>
+            <tr>
+                <td onclick="addkeyDisplay('4')" class="grey"><a ref="#" id="cuatro"  >4</a></td>
+                <td onclick="addkeyDisplay('5')" class="grey"><a ref="#"  id="cinco" >5</a></td>
+                <td onclick="addkeyDisplay('6')" class="grey"><a ref="#"  id="seis" >6</a></td>
+                <td class="black"><a ref="#"  id="menos" name="menos" >-</a></td>
+            </tr>
+            <tr>
+                <td onclick="addkeyDisplay('1')" class="grey"><a ref="#"  id="uno" name="uno" >1</a></td>
+                <td onclick="addkeyDisplay('2')" class="grey"><a ref="#"  id="dos" name="dos">2</a></td>
+                <td onclick="addkeyDisplay('3')" class="grey"><a ref="#"  id="tres" name="tres" >3</a></td>
+                <td class="black" ><a ref="#"  id="mas" name="mas">+</a></td>
+            </tr>
+            <tr>
+                <td  onclick="addkeyDisplay('sign')" class="grey" ><a ref="#" id="mom" name="mom" >+/-</a></td>
+                <td onclick="addkeyDisplay('0')" class="grey"><a ref="#" id="cero" name="cero">0</a></td>
+                <td onclick="addkeyDisplay('.')" class="grey"><a ref="#"  id="coma" name="coma" >.</a></td>
+                <td class="black"><a ref="#" id="igual" name="igual" >=</a></td>
+            </tr>
+        </table>
+    </form>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>

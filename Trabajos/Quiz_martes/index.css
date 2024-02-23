@@ -5,16 +5,7 @@ body{
 *{
     box-sizing: border-box;
 }
-/*
-.head{
-    display: grid;
-    
-    margin: 5px;
-   
-    grid-template-columns: 15% 70% 15%;
-    
-}
-*/
+
 
 .head{
     display: flex;
