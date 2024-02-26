@@ -49,7 +49,6 @@ const calculator={
 
 }
 
-
 const display = {
     content: document.getElementById('number'),
     limit: 10,
@@ -93,9 +92,6 @@ const display = {
         calculator.memory.pop();
     }
 }
-
-
-
 function addkeyDisplay(key){
    display.add(key);
 }
@@ -113,6 +109,7 @@ function ceDisplay(){
     display.clearLast;
     display.content.value="";
 }
+
 function operationDisplay(opr){  
     const operaciones = ['inverso', 'sqrt', 'exp'];
 
