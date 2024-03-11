@@ -105,6 +105,46 @@ h1{
     vertical-align: top;
 }
 
+.trailer{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    width: 75%;
+    height: 60%;
+    color: white;
+    z-index: 10;
+    padding-top: 10px;
+}
+
+.videito{
+    width: 100%;
+    height: auto;
+    grid-column: 1 /6;
+    grid-row: 1 / span 2;
+    border: none;
+}
+
+.videito iframe{
+    width: 100%;
+    height: 96%;
+    border: none;
+}
+
+.info_movie {
+    width: auto;
+    grid-column: 6 / 8;
+    grid-row: 1 / 2;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
 @media (max-width: 800px) {
     .head{
         flex-direction: column;
